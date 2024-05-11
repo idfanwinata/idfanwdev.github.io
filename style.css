@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: fixed; /* membuat navbar menjadi fixed */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: grey; /* menambahkan warna latar belakang putih pada navbar */
+  transition: background-color 0.3s; /* tambahkan hover */
+  margin: 0 auto; /* membuat navbar menjadi center */
+  overflow: auto; /* menambahkan scroll pada navbar */
+}
+.navbar img {
+  display: block;
+  margin: 0 auto; /* membuat gambar menjadi ditengah */
+  width: auto; /* rubah ukuran gambar menjadi normal */
+  height: auto; /* rubah ukuran gambar menjadi normal */
+}
+
+.navbar:hover {
+  background-color: blue; /* tambahkan hover */
+}
+
+.navbar-nav {
+  margin: 0; /* membuat posisi navbar item menjadi center */
+}
+.navbar-nav .nav-item {
+  margin-right: 40px; /* menambahkan jarak antar navbar item */
+}
+.btn-outline-success:hover {
+  background-color: grey; /* mengubah warna background saat button dihover menjadi grey */
+}
+
+.carousel-item img {
+  width: 180vw; /* membuat ukuran gambar carousel sedikit lebih besar */
+  height: 90vh; /* mengatur ukuran gambar carousel */
+}
+
+.carousel-item {
+  width: 180vw; /* membuat ukuran gambar carousel sedikit lebih besar */
+  height: 90vh; /* sesuaikan ukuran gambar carousel */
+}
+
+.card {
+  margin-left: auto; /* atur jarak card kiri */
+  margin-right: auto; /* atur jarak card kanan */
+  margin-top: 20px; /* atur jarak atas card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* tambahkan efek shadow pada card */
+  text-align: center; /* membuat posisi button pada card menjadi center */
+}
+.container-organization img {
+  display: flex; /* membuat container-organization menjadi flex */
+  justify-content: space-around; /* membuat gambar pada container-organization menjadi menyamping */
+  margin: 0 auto; /* atur margin gambar pada container-organization menjadi center */
+}
+
+.footer img[src="src/footer2.png"] {
+  width: 100%; /* set ukuran gambar footer2 menjadi full width */
+  padding-top: 400px; /* turunkan gambar footer2 */
+}
+
+.btn-primary {
+  background-color: blue; /* mengubah warna background button primary menjadi biru */
+  color: white; /* mengubah warna teks button primary menjadi putih */
+  padding: 10px 20px; /* menambahkan padding pada button primary */
+  border: none; /* menghilangkan border pada button primary */
+  cursor: pointer; /* mengubah cursor saat hover ke pointer */
+  text-decoration: none; /* menghilangkan underline pada text */
+  border-radius: 20px;
+}
+
+.row-organization {
+  display: flex; /* membuat row-organization menjadi flex */
+  justify-content: space-around; /* membuat gambar pada row-organization menjadi menyamping */
+  align-items: center; /* membuat gambar pada row-organization menjadi center */
+}
+
+.row-organization p {
+  text-align: center; /* membuat tulisan pada row-organization menjadi center */
+  font-size: larger;
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+.row-organization img {
+  width: 20%; /* membuat ukuran gambar menjadi kecil */
+  height: 20%;
+  margin-right: 30px; /* menambahkan jarak kesamping pada gambar pada row-organization */
+  margin-top: 20px;
+  margin-left: 110px;
+}
+
+footer {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+  color: black;
+}
+
+.copyright {
+  margin-top: 80px; /* memberikan margin pada class copyright */
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-item {
+    width: 100%;
+    height: auto;
+  }
+  .row-organization {
+    flex-direction: column; /* mengubah tata letak row-organization menjadi kolom */
+    align-items: center; /* membuat gambar pada row-organization menjadi center */
+  }
+
+  .row-organization p {
+    font-size: medium;
+  }
+  .row-organization img {
+    width: 25%; /* membuat ukuran gambar pada row-organization menjadi lebih besar */
+    height: auto;
+    margin-right: 0; /* menghilangkan jarak kesamping pada gambar pada row-organization */
+    margin-top: 20px;
+    margin-left: 25px; /* membuat gambar pada row-organization menjadi center */
+  }
+}
